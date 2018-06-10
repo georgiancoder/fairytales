@@ -1,32 +1,63 @@
+<!DOCTYPE HTML>
 <html>
 <head>
-    <title>paskun.ge</title>
-    <link rel="stylesheet" href="/assets/css/main.css"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>TITLE</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <!-- Font -->
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+
+
+    <!-- Stylesheets -->
+
+    <link href="/assets/css/bootstrap.css" rel="stylesheet">
+
+    <link href="/assets/css/ionicons.css" rel="stylesheet">
+
+
+    <link href="/assets/css/styles.css" rel="stylesheet">
+
+    <link href="/assets/css/responsive.css" rel="stylesheet">
+
+    <style>
+        .dada {
+            transition: all 0.5s ease;
+        }
+
+        .dada:hover {
+            transform: translateY(-2px);
+            box-shadow: 0px 0px 83px -8px rgba(0, 0, 0, .3)
+        }
+    </style>
+
 </head>
+
 <body>
-<div class="main">
-    <div class="top">
-        <div class="toki1"></div>
-        <div class="toki2"></div>
+<header>
+    <div class="container-fluid position-relative no-side-padding">
+
+        <a href="/" class="logo"><img src="/assets/images/logo.png" alt="Logo Image"></a>
+
+        <div class="menu-nav-icon" data-nav-menu="#main-menu"><i class="ion-navicon"></i></div>
+
+        <ul class="main-menu visible-on-click" id="main-menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Categories</a></li>
+            <li><a href="#">Features</a></li>
+        </ul>
+        <!-- main-menu -->
+
+        <!--
+                    <div class="src-area">
+                        <form>
+                            <button class="src-btn" type="submit"><i class="ion-ios-search-strong"></i></button>
+                            <input class="src-input" type="text" placeholder="Type of search">
+                        </form>
+                    </div>
+        -->
+
     </div>
-    <div class="main_inner">
-        <div class="nav">
-            <div class="menu_contaner">
-                <ul class="menu"><a hraf="">
-                        <li class="item">ზღაპრები ცხოვრებაზე</li>
-                    </a><a hraf="">
-                        <li class="item">ჯადოსნური ზღაპრები</li>
-                    </a><a hraf="">
-                        <li class="item">თქმულებები და ლეგენდები</li>
-                    </a><a hraf="">
-                        <li class="item">მითები</li>
-                    </a></ul>
-                <div class="name" onclick="menu_anumation()">MENU</div>
-                <script src="menu.js"></script>
-            </div>
-            <div class="faskunji_contaner">
-                <h2>faskunji</h2>
-                <h3></h3>
-            </div>
-        </div>
+    <!-- conatiner -->
+</header>
