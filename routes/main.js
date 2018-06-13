@@ -1,13 +1,28 @@
 const express = require('express');
 const router = express.Router();
 const Categorie = require('../controllers/categorieController');
+const Tale = require('../controllers/taleController');
 
 router.get('/',(req,res)=>{
 	let opt = {
 		page: 'home'
-	}
-	res.render('template/index',opt);
+	};
+	Tale.getAll((err,tales)=>{
+		if(err){
+			console.log(err);
+		} else {
+			opt.tales = tales;
+			res.render('template/index',opt);
+		}
+	});
+	
+});
 
+router.get('/tale/:id',(req,res)=>{
+	let opt = {
+		page: 'tale'
+	};
+	res.render('template/tale',opt);
 });
 
 
