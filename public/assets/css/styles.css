@@ -15,13 +15,8 @@
 /* ---------------------------------
 1. PRIMARY STYLES
 --------------------------------- */
-@font-face {
-    font-family: 'SPVena';
-    src: url('../fonts/SPVenaMedium.woff2') format('woff2'),
-        url('../fonts/SPVenaMedium.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
-}
+
+
 
 
 html{ font-size: 100%; height: 100%;  overflow-x: hidden; touch-action: manipulation; }
@@ -264,15 +259,21 @@ footer .input-area .email-input:focus{ box-shadow: 0px 0px 1px #aaa; }
 
 footer .input-area .submit-btn{ position: absolute; top: 0; bottom: 0; right: 0; width: 50px; background: none; 
 	border: 0; outline: 0; margin-right: 10px; opacity: .8; cursor: pointer; transition: all .2s; }
+@font-face {
+	font-family: 'Barata';
+	src: url('../fonts/Barata.woff2') format('woff2'), url('../fonts/Barata.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
 
 .blog-image {
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 40px;
-    font-weight: 900;
     height: 200px;
-    font-family: SPVena;
+	font-family: 'Barata' !important;
+	font-family: 'Barata';
     background: -webkit-linear-gradient(#eee, #433333);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
