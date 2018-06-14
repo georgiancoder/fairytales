@@ -22,7 +22,15 @@ router.get('/tale/:id',(req,res)=>{
 	let opt = {
 		page: 'tale'
 	};
-	res.render('template/tale',opt);
+	let id = req.params.id;
+	Tale.getById(id,(err,tale)=>{
+		if(err){
+			console.log(err);
+		} else {
+			opt.tale = tale;
+			res.render('template/tale',opt);
+		}
+	});
 });
 
 
