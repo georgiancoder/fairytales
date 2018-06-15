@@ -4,9 +4,9 @@ var bull = false;
 
 menuli.on("click", function () { 
     if(bull){
-        slider.fadeOut()
-    }else{
         slider.fadeIn()
+    }else{
+        slider.fadeOut()
     }
     bull = !bull
  })
