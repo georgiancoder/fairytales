@@ -703,16 +703,30 @@ button.swiper-pagination-bullet {
 }
 
 .display-table-cell h3 {
-  margin: 40px 40px 40px 40px;
-  color: white;
+  margin-top: 25px;
+  color: rgb(44, 44, 44);
+}
+
+.main-slider {
+  /* display: none; */
+}
+
+
+.display-table-cell {
+  text-align: center;
+}
+
+.display-table-cell {
+  text-align: center;
 }
 
 .swiper-slide {
   text-align: center;
   border: solid 1px white;
-  background-color: #a973ca;
-}
-
-.main-slider{
-  display: none;
+  background-color: #c6c6c6;
+  margin: 0px;
+  height: 100px;
+  border: solid 1px white;
+  color: rgb(15, 15, 15);
+  font-size: 15px;
 }
