@@ -1,37 +1,77 @@
 <%- include('./header') %>
 
-<section class="blog-area section">
-    <div class="container">
+    <div class="main-slider" id="sli">
+        <div class="swiper-container position-static" data-slide-effect="slide" data-autoheight="false" data-swiper-speed="500" data-swiper-autoplay="10000"
+            data-swiper-margin="0" data-swiper-slides-per-view="4" data-swiper-breakpoints="true" data-swiper-loop="true">
+            <div class="swiper-wrapper">
 
-        <div class="row">
-            <% if(typeof tales != 'undefined'){ %>
-                <% tales.forEach(function(tale){ %>
-            <div class="col-lg-4 col-md-6">
-                
-                <div class="card h-100 dada">
-                    <div class="single-post post-style-1" style="">
+                <div class="swiper-slide">
+                    <a class="slider-category" href="#">
 
-                        <div class="blog-image"><a href="/tale/<%= tale._id %>"><%= tale.title %></a></div>
+                        <div class="category">
 
-                        <!-- blog-info -->
-                    </div>
-                    <!-- single-post -->
+                            <div class="display-table center-text">
+
+                                <div class="display-table-cell">
+                                    <h3>
+                                        <b>ხალხური</b>
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+
+                    </a>
                 </div>
-                <!-- card -->
-                
-            </div>
-            <!-- col-lg-4 col-md-6 -->
-            <% }) %>
-                <% } %>
+                <!-- swiper-slide -->
 
+            </div>
+            <!-- swiper-wrapper -->
 
         </div>
-        <!-- row -->
-
-        <a class="load-more-btn" href="#"><b>მეტის ნახვა</b></a>
+        <!-- swiper-container -->
 
     </div>
-    <!-- container -->
-</section>
+    <!-- slider -->
 
-<%- include('./footer') %>
+
+    <section class="blog-area section">
+        <div class="container">
+
+            <div class="row">
+                <% if(typeof tales != 'undefined'){ %>
+                    <% tales.forEach(function(tale){ %>
+                        <div class="col-lg-4 col-md-6">
+
+                            <div class="card h-100 dada">
+                                <div class="single-post post-style-1" style="">
+
+                                    <div class="blog-image">
+                                        <a href="/tale/<%= tale._id %>">
+                                            <%= tale.title %>
+                                        </a>
+                                    </div>
+
+                                    <!-- blog-info -->
+                                </div>
+                                <!-- single-post -->
+                            </div>
+                            <!-- card -->
+
+                        </div>
+                        <!-- col-lg-4 col-md-6 -->
+                        <% }) %>
+                            <% } %>
+
+
+            </div>
+            <!-- row -->
+
+            <a class="load-more-btn" href="#">
+                <b>მეტის ნახვა</b>
+            </a>
+
+        </div>
+        <!-- container -->
+    </section>
+
+    <%- include('./footer') %>
