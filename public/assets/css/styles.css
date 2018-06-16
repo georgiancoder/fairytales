@@ -380,9 +380,6 @@ footer .input-area .submit-btn{ position: absolute; top: 0; bottom: 0; right: 0;
  	}
  }
 
- .title{
-	font-family: Barata;
- }
 
 
  @font-face {
@@ -408,6 +405,6 @@ body>section>div>div>div>div>p>span {
  	box-shadow: 0px 0px 40px rgba(128, 128, 128, 0.177);
  	font-family: BPG Rioni Vera;
  }
- footer{
-	 font-family: BPG Rioni Vera;
+ footer {
+	font-family: BPG Rioni Vera !important;
  }
