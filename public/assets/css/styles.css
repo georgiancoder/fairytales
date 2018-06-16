@@ -261,7 +261,7 @@ footer .input-area .submit-btn{ position: absolute; top: 0; bottom: 0; right: 0;
 	border: 0; outline: 0; margin-right: 10px; opacity: .8; cursor: pointer; transition: all .2s; }
 @font-face {
 	font-family: 'Barata';
-	src: url('../fonts/Barata.woff2') format('woff2'), url('../fonts/Barata.woff') format('woff');
+	src: url('../fonts/Barata.woff2') format('woff2'), url('../fonts/Barata.woff') format('woff'), url("../fonts/barata.ttf");
 	font-weight: normal;
 	font-style: normal;
 }
@@ -272,8 +272,6 @@ footer .input-area .submit-btn{ position: absolute; top: 0; bottom: 0; right: 0;
     align-items: center;
     font-size: 40px;
     height: 200px;
-	font-family: 'Barata' !important;
-	font-family: 'Barata';
     background: -webkit-linear-gradient(#eee, #433333);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
