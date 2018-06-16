@@ -179,7 +179,7 @@ header .src-area .src-btn{ position: absolute; top: 0; bottom: 0; left: 0; width
 6. NORMAL BLOG
 --------------------------------- */
 
-.post-style-1 .blog-image{ max-height: 200px; overflow: hidden; }
+.post-style-1 .blog-image{ max-height: 200px; overflow: hidden;  }
 
 
 
@@ -270,7 +270,8 @@ footer .input-area .submit-btn{ position: absolute; top: 0; bottom: 0; right: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 40px;
+	font-size: 40px;
+	font-family : Barata;
     height: 200px;
     background: -webkit-linear-gradient(#eee, #433333);
     -webkit-background-clip: text;
@@ -378,4 +379,29 @@ header{
  		display: block;
  		text-align: left;
  	}
+ }
+
+ .title{
+	font-family: Barata;
+ }
+
+
+ @font-face {
+ 	font-family: 'BPG Rioni Vera';
+ 	src: url('../fonts/BPGRioniVera.woff2') format('woff2'), url('../fonts/BPGRioniVera.woff') format('woff');
+ 	font-weight: normal;
+ 	font-style: normal;
+ }
+
+ p span{
+	 font-family: BPG Rioni Vera;
+	 font-size: 20px;
+ }
+
+ .title{
+	 margin-bottom: 20px;
+ }
+
+body>section>div>div>div>div>p>span {
+	background-color: rgba(0, 0, 0, 0) !important;
  }

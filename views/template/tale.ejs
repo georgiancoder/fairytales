@@ -1,25 +1,37 @@
 <%- include('header'); %>
 
-<section class="blog-area section">
-    <div class="container">
+    <section class="blog-area section">
+        <div class="container">
 
-        <div class="row">
-            <div class="col-lg-2 col-md-0"></div>
-            <div class="col-lg-8 col-md-12">
-                <div class="post-wrapper">
+            <div class="row">
+                <div class="col-lg-12 col-md-12">
+                    <div class="post-wrapper">
 
-                    <h3 class="title"><a href="#"><b><%= tale.title %></b></a></h3>
+                        <h3 class="title">
+                            <a href="#">
+                                <b>
+                                    <%= tale.title %>
+                                </b>
+                            </a>
+                        </h3>
+                        <%- tale.content %>
+                    </div>
+                    <!-- post-wrapper -->
+                </div>
+                <!-- col-sm-8 col-sm-offset-2 -->
+            </div>
+            <!-- row -->
 
-                    <%- tale.content %>
+        </div>
+        <!-- container -->
+        <div class="div" style="display: flex; max-width: 100%; justify-content: flex-end; padding: 0px 15% 0px 15%;">
+            <a class="load-more-btn" href="#" >
+                <b>შემდეგი ზღაპარი</b>
+            </a>
+        </div>
+    </section>
+    <!-- section -->
 
 
-                </div><!-- post-wrapper -->
-            </div><!-- col-sm-8 col-sm-offset-2 -->
-        </div><!-- row -->
 
-    </div><!-- container -->
-</section><!-- section -->
-
-
-
-<%- include('footer'); %>
+    <%- include('footer'); %>
