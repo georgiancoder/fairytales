@@ -267,6 +267,8 @@ footer .input-area .submit-btn{ position: absolute; top: 0; bottom: 0; right: 0;
 }
 
 .blog-image {
+	padding-left: 40px;
+	padding-right: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
