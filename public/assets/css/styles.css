@@ -315,9 +315,6 @@ footer .input-area .submit-btn{ position: absolute; top: 0; bottom: 0; right: 0;
 	width: 40%;
 }
 
-header{
-	box-shadow: 0px 0px 40px rgba(128, 128, 128, 0.177);
-}
 
 
 .post-wrapper{
@@ -404,4 +401,8 @@ header{
 
 body>section>div>div>div>div>p>span {
 	background-color: rgba(0, 0, 0, 0) !important;
+ }
+ header {
+ 	box-shadow: 0px 0px 40px rgba(128, 128, 128, 0.177);
+ 	font-family: BPG Rioni Vera;
  }
