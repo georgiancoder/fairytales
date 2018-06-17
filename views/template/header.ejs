@@ -40,30 +40,13 @@
         </div>
         <!-- conatiner -->
     </header>
-
     <div class="swiper-container" id="sli" style="display: none; margin-top: 10px;">
         <div class="swiper-wrapper">
+            <% categories.forEach(category=>{ %>
             <div class="swiper-slide">
-                <a href="/"> lalalala</a>
+                <a href="/"> <%= category.title %></a>
             </div>
-            <div class="swiper-slide">
-                <a href="/"> lalalala</a>
-            </div>
-            <div class="swiper-slide">
-                <a href="/"> lalalala</a>
-            </div>
-            <div class="swiper-slide">
-                <a href="/"> lalalala</a>
-            </div>
-            <div class="swiper-slide">
-                <a href="/"> lalalala</a>
-            </div>
-            <div class="swiper-slide">
-                <a href="/"> lalalala</a>
-            </div>
-            <div class="swiper-slide">
-                <a href="/"> lalalala</a>
-            </div>
+            <% }) %>
 
         </div>
         <!-- Add Pagination -->

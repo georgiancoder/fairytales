@@ -7,14 +7,22 @@ router.get('/',(req,res)=>{
 	let opt = {
 		page: 'home'
 	};
-	Tale.getAll((err,tales)=>{
+	Categorie.getCategories((err,categories)=>{
 		if(err){
 			console.log(err);
-		} else {
-			opt.tales = tales;
-			res.render('template/index',opt);
+		}else{
+			opt.categories = categories;
+            Tale.getAll((err,tales)=>{
+                if(err){
+                    console.log(err);
+                } else {
+                    opt.tales = tales;
+                    res.render('template/index',opt);
+                }
+            });
 		}
 	});
+
 	
 });
 
