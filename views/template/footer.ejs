@@ -31,15 +31,11 @@
                         <b>კატეგორიები</b>
                     </h4>
                     <ul>
+                        <% categories.forEach(category=>{ %>
                         <li>
-                            <a href="#">საბავშვო</a>
+                            <a href="#"><%= category.title %></a>
                         </li>
-                        <li>
-                            <a href="#">საყოფაცხოვრებო</a>
-                        </li>
-                        <li>
-                            <a href="#">მისტიკა</a>
-                        </li>
+                        <% }) %>
                     </ul>
                 </div>
                 <!-- footer-section -->

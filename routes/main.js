@@ -31,14 +31,21 @@ router.get('/tale/:id',(req,res)=>{
 		page: 'tale'
 	};
 	let id = req.params.id;
-	Tale.getById(id,(err,tale)=>{
-		if(err){
-			console.log(err);
-		} else {
-			opt.tale = tale;
-			res.render('template/tale',opt);
-		}
-	});
+    Categorie.getCategories((err,categories)=>{
+        if(err){
+            console.log(err);
+        }else{
+            opt.categories = categories;
+            Tale.getById(id,(err,tale)=>{
+                if(err){
+                    console.log(err);
+                } else {
+                    opt.tale = tale;
+                    res.render('template/tale',opt);
+                }
+            });
+        }
+    });
 });
 
 
