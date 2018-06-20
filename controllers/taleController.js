@@ -35,6 +35,12 @@ class TaleController {
         }
     }
 
+    getByCategory(id,cb){
+        if(id){
+            Tale.getByCategory(id,cb);
+        }
+    }
+
     updateTale(req,res){
         req.checkBody('title','title is required').notEmpty();
         req.checkBody('tale','content is required').notEmpty();

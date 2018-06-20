@@ -48,6 +48,27 @@ router.get('/tale/:id',(req,res)=>{
     });
 });
 
+router.get('/category/:id',(req,res)=>{
+    let opt = {
+        page: 'category'
+    };
+    let id = req.params.id;
+    Categorie.getCategories((err,categories)=>{
+        if(err){
+            console.log(err);
+        }else{
+            opt.categories = categories;
+            Tale.getByCategory(id,(err,tales)=>{
+                if(err){
+                    console.log(err);
+                } else {
+                    opt.tales = tales;
+                    res.render('template/category',opt);
+                }
+            });
+        }
+    });
+});
 
 
 

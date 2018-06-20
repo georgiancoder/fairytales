@@ -1,0 +1,41 @@
+<%- include('header'); %>
+
+<section class="blog-area section">
+        <div class="container">
+            <div class="row">
+                <% if(typeof tales != 'undefined'){ %>
+                    <% tales.forEach(function(tale){ %>
+                        <div class="col-lg-4 col-md-6">
+
+                            <div class="card h-100 dada">
+                                <div class="single-post post-style-1" >
+
+                                    <div class="blog-image">
+                                        <a href="/tale/<%= tale._id %>">
+                                            <%= tale.title %>
+                                        </a>
+                                    </div>
+                                    <!-- blog-info -->
+                                </div>
+                                <!-- single-post -->
+                            </div>
+                            <!-- card -->
+
+                        </div>
+                        <!-- col-lg-4 col-md-6 -->
+                        <% }) %>
+                            <% } %>
+
+
+            </div>
+            <!-- row -->
+
+            <!-- <a class="load-more-btn" href="#">
+                <b>მეტის ნახვა</b>
+            </a> -->
+
+        </div>
+        <!-- container -->
+    </section>
+
+<%- include('footer'); %>

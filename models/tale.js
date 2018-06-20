@@ -48,6 +48,11 @@ module.exports.getById = function (id, cb) {
     Tale.findById(id,cb);
 };
 
+module.exports.getByCategory = function(id,cb){
+    let Tale = this;
+    Tale.find({categorieIds: id},cb);
+}
+
 module.exports.remove = function (id, cb) {
     let Tale = this;
     Tale.findByIdAndRemove(id,cb);

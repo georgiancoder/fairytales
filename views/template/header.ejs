@@ -33,7 +33,7 @@
     <header>
         <div class="topnav" id="myTopnav">
             <a href="/" class="active">მთავარი</a>
-            <a href="#contact" id="cat">კატეგორიები</a>
+            <a href="#" id="cat">კატეგორიები</a>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                 <i class="fa fa-bars"></i>
             </a>
@@ -44,7 +44,7 @@
         <div class="swiper-wrapper">
             <% categories.forEach(category=>{ %>
             <div class="swiper-slide">
-                <a href="/"> <%= category.title %></a>
+                <a href="/category/<%= category._id %>"> <%= category.title %></a>
             </div>
             <% }) %>
 
