@@ -277,7 +277,6 @@ footer .input-area .submit-btn{ position: absolute; top: 0; bottom: 0; right: 0;
     height: 200px;
     background: -webkit-linear-gradient(#eee, #433333);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 #footerlogo{
 	width: 100px;
